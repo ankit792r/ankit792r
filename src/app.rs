@@ -1,10 +1,11 @@
 use leptos::prelude::*;
-use leptos_meta::{provide_meta_context, Stylesheet, Title};
+use leptos_meta::{provide_meta_context, Meta, Stylesheet, Title};
 use leptos_router::{
     components::{ParentRoute, Route, Router, Routes},
     StaticSegment, WildcardSegment,
 };
 
+use crate::comps::{footer::Footer, navbar::Navbar};
 use crate::pages::{about::AboutPage, blogs::BlogsPage, index::IndexPage, tools::ToolsPage};
 
 #[component]
@@ -14,8 +15,10 @@ pub fn App() -> impl IntoView {
     view! {
         <Stylesheet id="leptos" href="/pkg/ankit792r.css"/>
         <Title text="Welcome to Leptos"/>
+        <Meta name="description" content="Hello there wellcome to my page" />
 
         <Router>
+            <Navbar />
             <main>
                 <Routes fallback=move || "Not found.">
                     <Route path=StaticSegment("") view=IndexPage ssr=leptos_router::SsrMode::Async/>
@@ -32,6 +35,7 @@ pub fn App() -> impl IntoView {
                     <Route path=WildcardSegment("any") view=NotFound ssr=leptos_router::SsrMode::Async/>
                 </Routes>
             </main>
+            <Footer />
         </Router>
     }
 }
