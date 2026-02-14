@@ -14,12 +14,12 @@ pub fn App() -> impl IntoView {
 
     view! {
         <Stylesheet id="leptos" href="/pkg/ankit792r.css"/>
-        <Title text="Welcome to Leptos"/>
-        <Meta name="description" content="Hello there wellcome to my page" />
+        <Title text="Ankit Prajapati - Portfolio"/>
+        <Meta name="description" content="Portfolio of Ankit Prajapati - Founder of x64-Tech. Exploring creativity, innovation, and building meaningful projects." />
 
         <Router>
             <Navbar />
-            <main>
+            <main class="max-w-4xl md:max-w-3xl mx-auto px-6 py-16 min-h-screen">
                 <Routes fallback=move || "Not found.">
                     <Route path=StaticSegment("") view=IndexPage ssr=leptos_router::SsrMode::Async/>
                     <Route path=StaticSegment("/about") view=AboutPage ssr=leptos_router::SsrMode::Async />
@@ -28,7 +28,7 @@ pub fn App() -> impl IntoView {
                         <Route path=StaticSegment("") view=NotFound />
                     </ParentRoute>
 
-                    <ParentRoute path=StaticSegment("/tools") view=ToolsPage >
+                    <ParentRoute path=StaticSegment("/work") view=ToolsPage >
                         <Route path=StaticSegment("") view=NotFound />
                     </ParentRoute>
 

@@ -1,3 +1,5 @@
 pub mod navbar;
 pub mod footer;
 pub mod post_card;
+pub mod project_card;
+pub mod newsletter;
