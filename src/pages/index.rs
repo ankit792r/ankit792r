@@ -1,5 +1,5 @@
 use leptos::prelude::*;
-use crate::models::{Project, BlogPost};
+use crate::model::{Project, BlogPost};
 
 #[component]
 pub fn IndexPage() -> impl IntoView {

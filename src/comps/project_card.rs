@@ -1,5 +1,5 @@
 use leptos::prelude::*;
-use crate::models::Project;
+use crate::model::Project;
 
 #[component]
 pub fn ProjectCard(project: Project) -> impl IntoView {

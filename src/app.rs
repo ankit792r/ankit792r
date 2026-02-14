@@ -6,7 +6,12 @@ use leptos_router::{
 };
 
 use crate::comps::{footer::Footer, navbar::Navbar};
-use crate::pages::{blogs::BlogsPage, index::IndexPage, tools::ToolsPage, contact::ContactPage};
+use crate::pages::{
+    blogs::{index::BlogsPage},
+    index::IndexPage,
+    tools::ToolsPage,
+    contact::ContactPage,
+};
 
 #[component]
 pub fn App() -> impl IntoView {
@@ -24,9 +29,7 @@ pub fn App() -> impl IntoView {
                     <Route path=StaticSegment("") view=IndexPage ssr=leptos_router::SsrMode::Async/>
                     <Route path=StaticSegment("/contact") view=ContactPage ssr=leptos_router::SsrMode::Async />
 
-                    <ParentRoute path=StaticSegment("/blogs") view=BlogsPage >
-                        <Route path=StaticSegment("") view=NotFound />
-                    </ParentRoute>
+                    <Route path=StaticSegment("/blogs") view=BlogsPage ssr=leptos_router::SsrMode::Async />
 
                     <ParentRoute path=StaticSegment("/work") view=ToolsPage >
                         <Route path=StaticSegment("") view=NotFound />

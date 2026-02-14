@@ -1,5 +1,5 @@
 use leptos::prelude::*;
-use crate::models::BlogPost;
+use crate::model::BlogPost;
 
 #[component]
 pub fn PostCard(post: BlogPost) -> impl IntoView {
