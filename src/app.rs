@@ -6,7 +6,7 @@ use leptos_router::{
 };
 
 use crate::comps::{footer::Footer, navbar::Navbar};
-use crate::pages::{about::AboutPage, blogs::BlogsPage, index::IndexPage, tools::ToolsPage};
+use crate::pages::{blogs::BlogsPage, index::IndexPage, tools::ToolsPage, contact::ContactPage};
 
 #[component]
 pub fn App() -> impl IntoView {
@@ -22,7 +22,7 @@ pub fn App() -> impl IntoView {
             <main class="max-w-4xl md:max-w-3xl mx-auto px-6 py-16 min-h-screen">
                 <Routes fallback=move || "Not found.">
                     <Route path=StaticSegment("") view=IndexPage ssr=leptos_router::SsrMode::Async/>
-                    <Route path=StaticSegment("/about") view=AboutPage ssr=leptos_router::SsrMode::Async />
+                    <Route path=StaticSegment("/contact") view=ContactPage ssr=leptos_router::SsrMode::Async />
 
                     <ParentRoute path=StaticSegment("/blogs") view=BlogsPage >
                         <Route path=StaticSegment("") view=NotFound />

@@ -60,7 +60,7 @@ pub fn IndexPage() -> impl IntoView {
                 <div>
                     <h1 class="text-5xl md:text-7xl font-bold mb-4">"Ankit Prajapati"</h1>
                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6">
-                        <p class="text-xl text-gray-600">"Founder - x64-Tech"</p>
+                        // <p class="text-xl text-gray-600">"Founder - x64-Tech"</p>
                         <p class="text-gray-700">"📍 Mumbai"</p>
                     </div>
                 </div>
