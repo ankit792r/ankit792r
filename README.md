@@ -2,8 +2,6 @@
 hello and wellcome to my github!!
 
 
-#### Projects & Works
-
 | Project | Description | Links |
 | :--- | :--- | :--- |
 | **[Yamp](https://github.com/ankit792r/yamp)** | Yet Another Music Player, Simple, Focused, Offline Music Player. | [Repo](https://github.com/ankit792r/yamp) |
