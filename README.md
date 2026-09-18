@@ -1,8 +1,6 @@
 # ankit792r
 hello and welcome to my GitHub!!
 
-### Projects & Works
-
 **[Yamp](https://github.com/ankit792r/yamp)** — Yet Another Music Player, Simple, Focused, Offline Music Player.
 
 **[Image Toolbox](https://github.com/ankit792r/image-toolbox)** — Useless, local-first, image utility for Android.
